@@ -1,0 +1,79 @@
+			
+			.miscProperties {
+				max-width: 740px;
+				padding: auto 20px;
+				width: 100%;
+				margin: 0 auto;
+				box-sizing: border-box;
+				-webkit-box-sizing: border-box;
+			}
+			
+			.textContent {
+				color: rgba(0,0,0,0.84);
+				
+				font-family: quicksand ,medium-content-serif-font, Georgia, 
+				Cambria, "Times New Roman", Times, serif;
+				
+				font-feature-settings: "liga";
+				font-style: normal;
+				margin: 0px auto;
+				overflow-wrap: 38px;
+				text-rendering: optimizelegibility;
+				visibility: visible;
+			}
+			
+			.textContent p {
+				font-size: 21px;
+				font-weight: 400;
+				letter-spacing: -0.003em;
+				line-height: 33.1833px;
+			}
+			
+			.textContent h3 {
+				font-size: 34px;
+				font-weight: 600;
+				letter-spacing: -0.015em;
+				line-height: 39.1px;
+			}			
+			
+			.textContent h4 {
+				font-size: 26px;
+				font-weight: 600;
+				letter-spacing: -0.012em;
+				line-height: 31.7167px;
+			}
+			
+			.a_author {
+				position:relative;
+				float: right;
+				font-weight: 800;
+				color: rgba(0,0,0,0.6);
+				margin-top: 50px;
+			}
+
+			.nxt-article {
+				box-shadow: 0px 0px 30px 10px hsla(0,0%,0%,0.2);
+				color: rgba(0,0,0,0.6);
+				padding: 20px 20px 20px 60px;
+			}
+
+			.nxt-article a{
+				text-decoration: none;
+				color: rgba(0,0,0,0.6);
+			}
+
+			.nxt-article a:hover {
+				text-decoration: underline;
+				color: rgba(0,0,0,0.65);
+				transition: 1s;
+			}
+
+			.next-btn {
+				position: relative;
+				color: rgba(255,255,255,0.9);
+				background-color: rgba(0,0,0,0.9);
+				padding: 2px 8px 2px 8px;
+				margin-right: 5px;
+				float: right;
+				font-size: 0.8em;
+			}
