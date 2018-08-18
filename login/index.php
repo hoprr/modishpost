@@ -36,7 +36,7 @@
             <p style="padding: 10px; color: rgba(255,20,0,1); "><?php echo $msg; ?></p>
             <input type = "text" class = "form-control" 
                name = "username" placeholder = "username" 
-               required autofocus></br>
+               required autofocus><br>
             <input type = "password" class = "form-control"
                name = "password" placeholder = "password" required><br><br>
             <button class = "btn btn-lg btn-primary btn-block" type = "submit" 
