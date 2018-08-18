@@ -1,0 +1,149 @@
+   			body {
+   				font-family: 'Montserrat', sans-serif, 'nexa';
+   			}
+
+			#header {
+				position: relative;
+				top: -9px;
+				width: 100%;
+				padding: 0px 8px;
+			    background-color: rgba(0,0,0,0.9);
+				color: white;
+			    overflow: hidden;
+				text-align: center;
+			}
+
+			#header:hover {
+				background-color: rgba(0,0,0,1);
+				transition: 0.9s;
+			}
+
+			#topnav {
+				height: 20px;
+				width: 100%;
+				box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.16);
+				padding-bottom: 40px;
+				z-index: 999;
+				background-color: white;
+			}
+
+			#topnav a { text-decoration: none; color: rgba(0,0,0,0.7); font-weight: 500;}
+
+			#topnavtxt a { 
+				padding-left: 20px;
+			}
+
+			.content {
+			  padding: 16px;
+			  padding-top: 50px;
+			}
+
+			.sticky {
+			  position: fixed;
+			  top: 0px;
+			  padding-top: 10px;
+			  width: 100%;
+			}
+
+			.sticky + .content {
+			  padding-top: 60px;
+			}
+
+					/* Home page Styling */
+		.hpstyle h4 {
+			font-size: 1.1em;
+			font-weight: 600;
+			color: rgba(0,0,0,0.8);
+			padding-top: 20px;
+		}
+
+		.hpstyle p {
+			font-size: 0.92em;
+			color: rgba(0,0,0,0.6);
+		}
+
+		.author {
+			font-size: 0.9em;
+			font-weight: 600;
+			float: right;
+		}
+
+		.hpcard img {padding-top: 50px;	}
+
+		.hpcard a {text-decoration: none;}
+
+		.hpcard a:hover {text-decoration: underline;    text-decoration-color: rgba(0,0,0,0.3);}
+
+		.hpcard h4:hover {color: rgba(0,0,0,1); transition: 0.2s;}
+
+		#about {margin-top: 100px;border-bottom: 2px solid black;}
+
+		#about span {
+			background-color: rgba(0,0,0,1);
+			color: white;
+			padding: 3px 10px 0 10px;
+		}
+
+		.socialm i {padding: 20px;}
+
+		.socialm a {text-decoration: none; color: rgba(0,0,0,0.8);}
+
+		.socialm a:hover {color: rgba(0,0,0,1); transition: 1s;}
+
+		#about-p { color: rgba(0,0,0,0.8) !important; font-weight: 500;  }
+		
+		.categories {
+			margin-top: 60px; 
+			margin-left: 10px;
+			padding: 20px;
+			box-shadow: 0px 0px 30px 10px hsla(0,0%,0%,0.2);
+			border: 2px solid rgba(0,0,0,0.14);
+		}
+		
+		.a-date {
+			color: rgba(0,0,0,0.4)!important;
+			float: right;
+			width: 100%;
+		}
+
+	.admin-a {
+		margin-top: 50px;
+		margin-left: 50px;
+	} 
+
+	table {
+		box-shadow: 0px 0px 30px 10px hsla(0,0%,0%,0.2);
+		margin-top: 50px;
+	}
+
+	th, td {
+		padding: 16px!important;
+	}
+
+	.table th, .table td {
+	padding: 0.75rem;
+	vertical-align: top;
+	border-top: 1px solid rgba(0,0,0,0.15);
+	}
+
+	.admin-txt {
+		font-weight: 600;
+	} 
+
+	.blog {
+		padding-right: 30px; 
+	}
+
+	.a-body {
+		height: 600px!important;
+		resize: vertical!important;
+		overflow: auto;
+	}
+
+	.no-posts {
+		padding: 25px;
+		margin: 25px;
+		font-size: 1.5em;
+		font-weight: 600;
+	}
+
