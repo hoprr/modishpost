@@ -8,7 +8,9 @@
 	
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 	<link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
-			
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/solid.css" integrity="sha384-wnAC7ln+XN0UKdcPvJvtqIH3jOjs9pnKnq9qX68ImXvOGz2JuFoEiCjT8jyZQX2z" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/fontawesome.css" integrity="sha384-HbmWTHay9psM8qyzEKPc8odH4DsOuzdejtnr+OFtDmOcIVnhgReQ4GZBH7uwcjf6" crossorigin="anonymous">				
 	<link rel="stylesheet" type="text/css" href="css/css.css">
 	<link rel="stylesheet" type="text/css" href="css/bs.css">
 	<link rel="stylesheet" type="text/css" href="fa/all.css">
@@ -32,13 +34,12 @@
 <body>
 	<div id="header">
 		<div class="logo">
-		<a href="index.html"><img src="images/logo.png" height="90" alt="logo"></a>
+		<a href="index.php"><img src="images/logo.png" height="90" alt="logo"></a>
 		</div>
 	</div>
 
 	<div id="topnav">
 		<div id="topnavtxt">
-			<a href="index.php"> Home </a>
-			<a href="posts.php">All Articles</a>
+			<a href="index.php" style="color: rgba(0,0,0,0.3); font-size:1.2em ; font-weight: 600;"><i class="fas fa-home"></i></a>
 		</div>
 	</div>

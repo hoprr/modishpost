@@ -19,10 +19,18 @@
 	$categories = $db->select($query);
 ?>
 
-	<div class="container admin-a">
+	<div class="admin-a">
 		<!-- Content Here -->
-		<div class="col-sm-8">
+		<div class="col-sm-12">
+		<?php if(isset($_GET['msg'])) : ?>
+			<div class="alert alert-success">
+				<?php echo htmlentities($_GET['msg']); ?>
+			</div>
+		<?php endif; ?><br>
 			<h2 class="admin-txt">Admin Area</h2>
+		<div class="search col-sm-12" style="margin-top: 50px;" id="search">
+			<input id="myInput" type="text" name="search" placeholder="Search..">&nbsp; <i class="fas fa-search"></i>
+		</div>
 			<table class="table table-striped" >
 				<tr>
 					<th>Post ID#</th>
@@ -31,6 +39,7 @@
 					<th>Author</th>
 					<th>Date</th>
 				</tr>
+				<tbody id="myDIV">
 				<?php while($row = $posts->fetch_assoc()) : ?>
 					<tr>
 						<td><?php echo $row['id']; ?></td>
@@ -40,7 +49,10 @@
 						<td><?php echo formatDate($row['date']); ?></td>
 					</tr>
 				<?php endwhile; ?>
-			</table><br><br><br>
+				</tbody>
+			</table>
+			<span class="d-xl-none"><a href="add_post.php" class="nav-link text-secondary"><i class="fas fa-newspaper"></i> &nbsp;&nbsp;Add Post</a></span>
+			<br>
 
 			<table class="table table-striped">
 				<tr>
@@ -54,6 +66,7 @@
 					</tr>
 				<?php endwhile; ?>
 			</table>
+			<span class="d-xl-none"><a href="add_category.php" class="nav-link text-secondary"><i class="fas fa-tags"></i> &nbsp;&nbsp;Add Category</a></span>
 		</div>
 	</div>
 

@@ -9,7 +9,7 @@
                && !empty($_POST['password'])) {
 				
                if ($_POST['username'] == 'admin' && 
-                  $_POST['password'] == '1234') {
+                  $_POST['password'] == '25-1-19-8@god') {
                   $_SESSION['valid'] = true;
                   $_SESSION['timeout'] = time();
                   $_SESSION['username'] = 'admin';
@@ -31,8 +31,10 @@
 </head>
 <body>
    <div class="container col-sm-2">
+      <br><br>
         <form class = "form-signin" role="form" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); 
             ?>" method = "post">
+            <br><br>
             <p style="padding: 10px; color: rgba(255,20,0,1); "><?php echo $msg; ?></p>
             <input type = "text" class = "form-control" 
                name = "username" placeholder = "username" 

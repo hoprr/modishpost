@@ -1,3 +1,4 @@
+
 <?php include 'includes/header.php'; ?>
 <?php
 	// Create DB Object
@@ -31,20 +32,23 @@
 	$categories = $db->select($query);
 
 ?>
+<?php include 'includes/nav.php'; ?>
 
 
 <?php if($posts) : ?>
-
 	<div class="content container hpstyle">
+		<div class="search col-sm-6" style="margin-top: 50px;" id="search">
+			<input id="myInput" type="text" name="search" placeholder="Search..">&nbsp; <i class="fas fa-search"></i>
+		</div>
 		<div class="row">
-		    <div class="col-sm-4">				
+		    <div class="col-sm-6">				
 				<?php while($row = $posts->fetch_assoc()) : ?>
 
-				<div class="hpcard">
+				<div class="hpcard" id="myDIV">
 		    		<a href="post.php?id=<?php echo urlencode($row['id']); ?>">
 		    			<div class="posts">
 				    		<div class="posts-image">
-								<img src="images/sample.jpg" width="100%">
+								<img src="<?php echo $row['image']; ?>" width="100%">
 							</div>
 							<div class="post-text">	
 									<h4> <?php echo $row['title']; ?> </h4>
@@ -54,7 +58,7 @@
 						</div>
 					</a>
 					<span class="author">- by <?php echo $row['author']; ?></span>
-				</div>
+				</div><br><br><br>
 
 				<?php endwhile; ?>	    	
 		    </div>

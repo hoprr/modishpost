@@ -15,7 +15,7 @@
 	$categories = $db->select($query);
 
 ?>
-
+<?php include 'includes/nav.php' ?>
 <?php if($posts) : ?>
 
 	<div class="content container hpstyle">
@@ -23,7 +23,7 @@
 		    <div class="col-sm-8">			
 				<div class="hpcard">
 		    		<a href="post.php?id=<?php $row = $posts->fetch_assoc(); echo urlencode($row['id']); ?>">
-						<img src="<?php echo $row['image']; ?>"  style="overflow: hidden;  filter: brightness(90%); width:100%;" alt="Thumbnail">
+						<img src="<?php echo $row['image']; ?>"  style="overflow: hidden; width:100%;" alt="Thumbnail">
 						<h4> <?php echo $row['title']; ?> </h4>
 						<p class="a-date"> <?php echo formatDate($row['date']); ?> </p>
 						<p>  <?php echo shortenText($row['description']); ?> </p>
@@ -61,10 +61,7 @@
 				</div>				
 		    </div>
 		    
-		    <div class="col-sm-4">	
-				
-				<?php include 'includes/categories.php'; ?>	    	
-				
+		    <div class="col-sm-4">					
 				<?php while($row = $posts->fetch_assoc()) : ?>
 
 				<div class="hpcard">

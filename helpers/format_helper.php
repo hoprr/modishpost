@@ -1,3 +1,4 @@
+<?php 
 /* 
 	Format the Date
 */

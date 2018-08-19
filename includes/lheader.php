@@ -1,5 +1,5 @@
 <?php include '../config/config.php'; ?>
-<?php include '../libraries/database.php'; ?>
+<?php include '../libraries/Database.php'; ?>
 <?php include '../helpers/format_helper.php'; ?>
 <!doctype html>
 <html lang="en">
@@ -35,7 +35,7 @@
 <body>
 	<div id="header">
 		<div class="logo">
-		<a href="index.html"><img src="../images/logo.png" height="90" alt="logo"></a>
+		<a href="index.php"><img src="../images/logo.png" height="90" alt="logo"></a>
 		</div>
 	</div>
 

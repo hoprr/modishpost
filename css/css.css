@@ -13,18 +13,42 @@
 				text-align: center;
 			}
 
+			div.scrollmenu {
+			    overflow: auto;
+			    white-space: nowrap;
+			}
+
 			#header:hover {
 				background-color: rgba(0,0,0,1);
 				transition: 0.9s;
 			}
 
 			#topnav {
-				height: 20px;
+				height: 55px;
 				width: 100%;
 				box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.16);
-				padding-bottom: 40px;
+				padding-bottom: 35px;
 				z-index: 999;
 				background-color: white;
+				line-height: 2.5;
+				padding-left: 10%;
+				padding-right: 10%;
+				text-align: center;
+			}
+
+			#topnav-admin {
+				height: 55px;
+				width: 100%;
+				box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.16);
+				padding-bottom: 35px;
+				z-index: 999;
+				background-color: white;
+				line-height: 2.5;
+			}
+
+			#dashboard {
+				color: black;
+				text-decoration: none;
 			}
 
 			#topnav a { text-decoration: none; color: rgba(0,0,0,0.7); font-weight: 500;}
@@ -41,12 +65,12 @@
 			.sticky {
 			  position: fixed;
 			  top: 0px;
-			  padding-top: 10px;
+			  padding-top: 5px;
 			  width: 100%;
 			}
 
 			.sticky + .content {
-			  padding-top: 60px;
+			  padding-top: 180px;
 			}
 
 					/* Home page Styling */
@@ -92,14 +116,6 @@
 
 		#about-p { color: rgba(0,0,0,0.8) !important; font-weight: 500;  }
 		
-		.categories {
-			margin-top: 60px; 
-			margin-left: 10px;
-			padding: 20px;
-			box-shadow: 0px 0px 30px 10px hsla(0,0%,0%,0.2);
-			border: 2px solid rgba(0,0,0,0.14);
-		}
-		
 		.a-date {
 			color: rgba(0,0,0,0.4)!important;
 			float: right;
@@ -127,7 +143,7 @@
 	}
 
 	.admin-txt {
-		font-weight: 600;
+		font-weight: 500;
 	} 
 
 	.blog {
@@ -147,3 +163,36 @@
 		font-weight: 600;
 	}
 
+#myInput {
+    width: 100px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 10px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+#myInput:focus {
+    width: 80%;
+}
+
+.search {
+	margin-right: 10%;
+	color: rgba(0,0,0,0.6);
+}
+
+.nav-search {
+	width: 100%;
+	height: 35px; 
+	margin: 5px 0 5px 0px; 
+	box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.16);
+}
+
+.contact {
+	margin-left: 10%;
+	color: rgba(0,0,0,0.6);
+}

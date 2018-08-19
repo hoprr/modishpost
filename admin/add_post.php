@@ -71,7 +71,7 @@
 		 		} 
 		 		?>
 		  	<option <?php echo $selected; ?> value="<?php echo $row['id']; ?>"><?php echo $row['name']; ?></option>
-		 <?php endwhile; ?>
+		<?php endwhile; ?>
 		  <option>Events</option>
 		</select>
 	  </div>
