@@ -1,7 +1,7 @@
 <?php 
 define('DB_HOST', 'localhost');
 define('DB_USER', 'root');
-define('DB_PASS', '25-1-19-8');
+define('DB_PASS', '1234');
 define('DB_NAME', 'blog');
 
 
